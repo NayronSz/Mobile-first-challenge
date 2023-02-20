@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-main-large: "Staatliches", Sans-serif;
+  --ff-main-sm: "Palanquin", Sans-serif;
+
+  font-size: 62.5%;
+}
+
+.page {
+  max-width: clamp(20rem, 113rem + 119vh, 38rem);
+  margin: 0 auto;
+}
+
+.main-container {
+  font-family: var(--ff-main-large);
+  position: absolute;
+
+  display: grid;
+  gap: 3.2rem;
+}
+
+main header {
+  background: #8e9aaf;
+
+  height: 30rem;
+
+  display: grid;
+  place-items: center;
+}
+
+main header img {
+  width: fit-content;
+  height: 16rem;
+
+  margin: 3.2rem 0 2rem;
+}
+
+main header h1 {
+  width: 100%;
+
+  background-color: #cbc0d3;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: var(--ff-main-large);
+  font-size: 3.5rem;
+  line-height: 2rem;
+  color: #ffffff;
+  font-weight: 400;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  letter-spacing: 5px;
+
+  padding: 1.8rem 6rem;
+  margin-bottom: 3.6rem;
+}
+
+main p {
+  position: relative;
+  width: auto;
+
+  text-align: center;
+
+  font-family: var(--ff-main-sm);
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.cards-section {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.main-container {
+  position: relative;
+  background: #eff1ff;
+  height: 100%;
+
+  padding: 3.2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  
+  animation: downtop 900ms 350ms backwards;
+
+
+}
+
+.card-section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+img:hover {
+  transition: scale(1.5);
+}
+
+.cards-section h2 {
+  position: absolute;
+  top: 1rem;
+  left: 19rem;
+
+  color: #4a4e69;
+}
+
+.cards-section span {
+  background: #feeafa;
+  border-radius: 2rem;
+
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+
+  width: fit-content;
+  height: 3.5rem;
+
+  padding: 0 3rem;
+
+  display: inline-flex;
+  align-items: center;
+  animation: rightToLeft 1s 550ms forwards;
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(45px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
